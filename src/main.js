@@ -7,8 +7,6 @@ import ProductList from './components/products/ProductList.vue';
 import CreateProduct from './components/products/CreateProduct.vue';
 import EditProduct from './components/products/EditProduct.vue';
 
-import store from './store/store';
-
 const routes = [
     { path: '/', component: Home },
     { path: '/products', component: ProductList },
@@ -23,5 +21,4 @@ const router = createRouter({
 
 const app = createApp(App);
 app.use(router);
-app.use(store);
 app.mount('#app');
